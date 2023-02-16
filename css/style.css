@@ -11,6 +11,8 @@ body {
 }
 :root {
     --color-FFF4E7: #FFF4E7;
+    --color-727272: #727272;
+    --color-FF900E: #FF900E;
 }
 a {
     text-decoration: none;
@@ -74,13 +76,14 @@ nav{
 .bannar-description {
     font-size: 16px;
     font-weight: 400;
-    color: #727272;
+    color: var(--color-727272);
     margin: 20px 0;
 }
-.bannar-btn {
+.bannar-btn,
+.feature-btn {
     color: #fff;
     padding: 15px 20px;
-    background: #FF900E;
+    background: var(--color-FF900E);
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
@@ -92,3 +95,49 @@ nav{
 
 /* HEADER END HERE */
 
+
+/* FEATURE SECTION START HERE */
+.feature {
+    padding: 90px 0;
+}
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+.feature-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-images img {
+    width: 40%;
+}
+.feature-info {
+    padding: 60px 0;
+}
+
+.feature-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--color-727272);
+    margin: 20px 0;
+}
+.feature-title span {
+    color: var(--color-FF900E);
+    font-size: 42px;
+    font-weight: 700;
+}
+.feature-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-727272);
+}
+
+/* FEATURE SECTION END HERE */
